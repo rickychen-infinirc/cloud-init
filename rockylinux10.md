@@ -33,3 +33,13 @@ qm set 901 --vga virtio
 
 # 轉成模板
 qm template 901
+---
+
+# 複製新 VM
+qm clone 901 102 --name my-rocky10 --full
+
+# 改成其他 IP
+qm set 102 --ipconfig0 ip=192.168.200.92/21,gw=192.168.200.1
+
+# 啟動
+qm start 102
