@@ -27,10 +27,11 @@ qm set 900 --boot order=scsi0
 qm set 900 --ide2 ssd1-zfs-pool:cloudinit
 
 # 設定使用者和網路
+```
 qm set 900 --ciuser ubuntu --cipassword 123456
 qm set 900 --ipconfig0 ip=192.168.200.90/21,gw=192.168.200.1
 qm set 900 --nameserver 8.8.8.8
-
+```
 # 設定顯示 (UEFI 用)
 qm set 900 --vga virtio
 
