@@ -1,6 +1,6 @@
 # 下載映像
 cd /var/lib/vz/template/iso/
-wget https://cloud-images.ubuntu.com/daily/current/noble-server-cloudimg-amd64.img
+wget https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img
 
 # 先刪除原本的 VM (如果需要重建)
 qm destroy 900
