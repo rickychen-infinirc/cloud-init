@@ -2,7 +2,7 @@
 cd /var/lib/vz/template/iso/
 wget https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img
 
-# 先刪除原本的 VM (如果需要重建)
+# 先刪除原本的 VM 
 qm destroy 900
 
 # 重新建立 VM 用你的規格
